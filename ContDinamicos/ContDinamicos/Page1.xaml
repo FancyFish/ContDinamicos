@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContDinamicos.Page1">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="Center">
+            <TableView HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       BackgroundColor="Coral"
+                      >
+                <TableSection >
+                    <EntryCell
+                        Label="Titulo"
+                        x:Name="EntTitle"
+                        Placeholder="Ingrese titulo"
+                        ></EntryCell>
+                    <EntryCell
+                        Label="Autor"
+                        x:Name="EntAuthor"
+                        Placeholder="Ingrese Autor"
+                        ></EntryCell>
+                    <EntryCell
+                        Label="Area"
+                        x:Name="EntArea"
+                        Placeholder="Ingrese Area"
+                        ></EntryCell>
+                </TableSection>
+               
+                    <Button Text="Enviar"
+                    HorizontalOptions="CenterAndExpand"
+                    x:Name="BtnSend"
+                    ></Button>
+                
+                
+            </TableView>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
